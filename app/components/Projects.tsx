@@ -291,7 +291,7 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
     <>
       <section
         id="projects"
-        className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-22 lg:px-8 lg:py-24"
+        className="relative overflow-hidden px-4 py-1 sm:px-6 sm:py-1 md:px-8 md:py-1 lg:px-8 lg:py-1"
       >
         <div
           className="pointer-events-none absolute left-[8%] top-[16%] h-44 w-44 rounded-full bg-emerald-300/10 blur-3xl md:h-52 md:w-52"

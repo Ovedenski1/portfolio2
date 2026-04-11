@@ -169,6 +169,9 @@ export const translations = {
           "A gaming website project with a modern interface and content-focused design.",
       },
     },
+    localizationSection: {
+      title: "Brands I've worked with",
+    },
     contactSection: {
       title: "Contact",
       formTitle: "Get in touch",
@@ -226,7 +229,6 @@ export const translations = {
         "Отлично обслужване на клиенти",
         "Решаване на проблеми",
         "Добра организираност",
-        "Висока степен на самостоятелност и отговорност",
       ],
     },
     experienceSection: {
@@ -345,6 +347,9 @@ export const translations = {
         pokko:
           "Проект за уебсайт за игри с модерен интерфейс и дизайн, насочен към съдържанието.",
       },
+    },
+    localizationSection: {
+      title: "Брандове, с които съм работил",
     },
     contactSection: {
       title: "Контакт",
@@ -523,6 +528,9 @@ export const translations = {
           "Ein Gaming-Website-Projekt mit moderner Benutzeroberfläche und inhaltsorientiertem Design.",
       },
     },
+    localizationSection: {
+      title: "Marken, mit denen ich gearbeitet habe",
+    },
     contactSection: {
       title: "Kontakt",
       formTitle: "Kontakt aufnehmen",
@@ -699,6 +707,9 @@ export const translations = {
         pokko:
           "モダンなUIとコンテンツ重視の設計を持つゲーム系ウェブサイトのプロジェクトです。",
       },
+    },
+    localizationSection: {
+      title: "これまでに携わったブランド",
     },
     contactSection: {
       title: "連絡先",

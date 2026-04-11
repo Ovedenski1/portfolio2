@@ -57,7 +57,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+      className="relative overflow-hidden px-4 pt-4=1 pb-8 sm:px-6 sm:pt-1 sm:pb-6 md:px-8 md:pt-6 md:pb-10 lg:px-8 lg:pt-1 lg:pb-12"
     >
       <div
         className="pointer-events-none absolute left-[10%] top-[20%] h-44 w-44 rounded-full bg-emerald-300/10 blur-3xl"

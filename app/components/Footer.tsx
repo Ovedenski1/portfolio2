@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t border-slate-300/60 py-6 dark:border-white/10">
+    <footer className="border-t border-slate-300/60 py-6 dark:border-white/10">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm text-slate-600 dark:text-slate-400">
           This website is open-source!{" "}

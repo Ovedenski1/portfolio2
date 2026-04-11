@@ -6,6 +6,7 @@ import SkillsSection from "../components/Skills";
 import WorkHistorySection from "../components/WorkHistory";
 import EducationSection from "../components/Education";
 import ProjectsSection from "../components/Projects";
+import LocalizationSection from "../components/Localization";
 import ContactSection from "../components/Contact";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
@@ -34,6 +35,7 @@ export default function HomeClient() {
       <WorkHistorySection language={language} />
       <EducationSection language={language} />
       <ProjectsSection language={language} />
+      <LocalizationSection language={language} />
       <ContactSection language={language} />
       <Footer />
       <BackToTop />
