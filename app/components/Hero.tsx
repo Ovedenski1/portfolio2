@@ -57,7 +57,7 @@ export default function HeroSection({
           introActive={introActive}
         />
 
-        <div className="flex flex-col gap-8 md:gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
+        <div className="flex flex-col gap-4 md:gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
           <div className="order-1 flex w-full shrink-0 justify-center lg:order-2 lg:w-[430px] lg:justify-end">
             <div className="relative profile-wrapper h-64 w-64 sm:h-72 sm:w-72 md:h-[340px] md:w-[340px] lg:h-[430px] lg:w-[430px]">
               <div className="absolute inset-0 rounded-full bg-emerald-200/30 blur-3xl dark:bg-cyan-400/20" />
@@ -71,8 +71,8 @@ export default function HeroSection({
             </div>
           </div>
 
-          <div className="order-2 mx-auto w-full max-w-[620px] shrink-0 text-center sm:-mt-4 md:max-w-[760px] md:text-center lg:order-1 lg:mx-0 lg:mt-0 lg:max-w-[620px] lg:text-left">
-            <div className="mx-auto flex h-[190px] w-full max-w-[620px] flex-col items-center justify-end md:h-[220px] md:max-w-[760px] md:justify-center lg:mx-0 lg:h-[240px] lg:max-w-[620px] lg:items-start">
+          <div className="order-2 mx-auto w-full max-w-[620px] shrink-0 text-center sm:-mt-2 md:max-w-[760px] md:text-center lg:order-1 lg:mx-0 lg:mt-0 lg:max-w-[620px] lg:text-left">
+            <div className="mx-auto flex h-[140px] w-full max-w-[620px] flex-col items-center justify-center md:h-[220px] md:max-w-[760px] md:justify-center lg:mx-0 lg:h-[240px] lg:max-w-[620px] lg:items-start">
               <h1 className="w-full text-center text-4xl font-extrabold uppercase tracking-tight text-slate-800 dark:text-white sm:text-5xl md:text-6xl lg:text-left lg:text-6xl xl:text-7xl">
                 <span className="block text-emerald-400">
                   <span className="inline-block -translate-x-2 text-center sm:-translate-x-3 md:-translate-x-5 lg:-translate-x-8 lg:text-left xl:-translate-x-12">
@@ -109,7 +109,7 @@ export default function HeroSection({
                 </span>
               </h1>
 
-              <div className="mt-3 flex min-h-[52px] w-full items-center justify-center text-lg font-medium text-slate-500 dark:text-slate-400 sm:text-2xl md:min-h-[64px] md:text-2xl lg:justify-start">
+              <div className="mt-2 flex min-h-[44px] w-full items-center justify-center text-lg font-medium text-slate-500 dark:text-slate-400 sm:text-2xl md:min-h-[64px] md:text-2xl lg:justify-start">
                 <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 whitespace-normal md:max-w-[640px] lg:justify-start lg:whitespace-nowrap">
                   <span className="inline-block text-center lg:text-left">
                     <WordCycler
@@ -159,7 +159,7 @@ export default function HeroSection({
               </div>
             </div>
 
-            <div className="mx-auto mt-2 w-full max-w-[360px] sm:max-w-[440px] md:max-w-[680px] lg:mx-0 lg:max-w-[620px]">
+            <div className="mx-auto mt-1 w-full max-w-[360px] sm:max-w-[440px] md:max-w-[680px] lg:mx-0 lg:max-w-[620px]">
               <ScrambleText
                 key={`${language}-${t.hero.description}`}
                 text={t.hero.description}
