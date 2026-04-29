@@ -20,7 +20,7 @@ export const translations = {
       firstName: "Lyuboslav",
       lastName: "Ovedenski",
       roleLeft: "Project Manager",
-      roleRight: "Web Development",
+      roleRight: "Web Developer",
       roleJoiner: "&",
       description:
         "I manage projects by balancing scope, time, and resources to consistently deliver stellar quality and performance. I specialize in translation and localization, ensuring that projects meet linguistic and cultural standards while maintaining efficiency and accuracy.",
@@ -200,7 +200,7 @@ export const translations = {
       firstName: "Любослав",
       lastName: "Оведенски",
       roleLeft: "Мениджър на проекти",
-      roleRight: "Уеб разработка",
+      roleRight: "Уеб разработчик",
       roleJoiner: "и",
       description:
         "Управлявам проекти, като балансирам обхват, време и ресурси, за да постигам постоянно високо качество и отлични резултати. Специализирам в превод и локализация, като гарантирам, че проектите отговарят на езиковите и културните стандарти, при запазване на ефективност и точност.",
@@ -376,10 +376,10 @@ export const translations = {
       experience: "Erfahrung",
     },
     hero: {
-      firstName: "Lyuboslav",
-      lastName: "Ovedenski",
+      firstName: "Lyuboslaw",
+      lastName: "Owedenski",
       roleLeft: "Projektmanager",
-      roleRight: "Webentwicklung",
+      roleRight: "Webentwickler",
       roleJoiner: "und",
       description:
         "Ich leite Projekte, indem ich Umfang, Zeit und Ressourcen ausbalanciere, um konstant hohe Qualität und starke Ergebnisse zu liefern. Ich bin auf Übersetzung und Lokalisierung spezialisiert und stelle sicher, dass Projekte sprachlichen und kulturellen Standards entsprechen, bei gleichbleibender Effizienz und Genauigkeit.",
@@ -559,7 +559,7 @@ export const translations = {
       firstName: "リュボスラフ",
       lastName: "オベデンスキー",
       roleLeft: "プロジェクトマネージャー",
-      roleRight: "ウェブ開発",
+      roleRight: "ウェブ開発者",
       roleJoiner: "・",
       description:
         "私は、スコープ・時間・リソースのバランスを取りながらプロジェクトを管理し、常に高い品質と優れた成果を実現しています。翻訳およびローカリゼーションを専門としており、効率性と正確性を維持しつつ、プロジェクトが言語的および文化的な基準を満たすようにしています。",
