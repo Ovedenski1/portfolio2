@@ -9,7 +9,12 @@ type ProjectsSectionProps = {
   language: Language;
 };
 
-type ProjectActionType = "visit" | "download" | "github" | "private";
+type ProjectActionType =
+  | "visit"
+  | "download"
+  | "downloadApk"
+  | "github"
+  | "private";
 
 type ProjectItem = {
   slug: string;
@@ -19,6 +24,7 @@ type ProjectItem = {
   actionType: ProjectActionType;
   actionHref?: string;
   images: number;
+  coverImage?: number;
 };
 
 type ModalState = {
@@ -36,6 +42,7 @@ function ProjectButton({
   labels: {
     visit: string;
     download: string;
+    downloadApk: string;
     github: string;
     private: string;
   };
@@ -58,7 +65,9 @@ function ProjectButton({
       ? labels.visit
       : type === "download"
         ? labels.download
-        : labels.github;
+        : type === "downloadApk"
+          ? labels.downloadApk
+          : labels.github;
 
   return (
     <a
@@ -93,6 +102,7 @@ function ImageModal({
       if (event.key === "ArrowRight") {
         setModal((prev) => {
           if (!prev) return prev;
+
           const currentProject = projects[prev.projectIndex];
           const hasNextImage = prev.imageIndex + 1 < currentProject.images;
 
@@ -101,6 +111,17 @@ function ImageModal({
           return {
             ...prev,
             imageIndex: prev.imageIndex + 1,
+          };
+        });
+      }
+
+      if (event.key === "ArrowLeft") {
+        setModal((prev) => {
+          if (!prev || prev.imageIndex === 0) return prev;
+
+          return {
+            ...prev,
+            imageIndex: prev.imageIndex - 1,
           };
         });
       }
@@ -119,13 +140,29 @@ function ImageModal({
 
   const project = projects[modal.projectIndex];
   const imageSrc = `/projects/${project.slug}/${modal.imageIndex + 1}.png`;
+
+  const hasPreviousImage = modal.imageIndex > 0;
   const hasNextImage = modal.imageIndex + 1 < project.images;
+
+  const goPreviousImage = () => {
+    if (!hasPreviousImage) return;
+
+    setModal((prev) => {
+      if (!prev) return prev;
+
+      return {
+        ...prev,
+        imageIndex: prev.imageIndex - 1,
+      };
+    });
+  };
 
   const goNextImage = () => {
     if (!hasNextImage) return;
 
     setModal((prev) => {
       if (!prev) return prev;
+
       return {
         ...prev,
         imageIndex: prev.imageIndex + 1,
@@ -162,12 +199,26 @@ function ImageModal({
 
             <button
               type="button"
+              onClick={goPreviousImage}
+              disabled={!hasPreviousImage}
+              className={`absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border text-xl font-bold shadow-md transition ${
+                hasPreviousImage
+                  ? "border-white/20 bg-white/85 text-slate-800 hover:bg-white dark:bg-slate-800/90 dark:text-slate-100 dark:hover:bg-slate-700"
+                  : "cursor-not-allowed border-slate-300/30 bg-slate-300/40 text-slate-500 opacity-40 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-500"
+              }`}
+              aria-label="Previous image"
+            >
+              ←
+            </button>
+
+            <button
+              type="button"
               onClick={goNextImage}
               disabled={!hasNextImage}
               className={`absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border text-xl font-bold shadow-md transition ${
                 hasNextImage
                   ? "border-white/20 bg-white/85 text-slate-800 hover:bg-white dark:bg-slate-800/90 dark:text-slate-100 dark:hover:bg-slate-700"
-                  : "cursor-not-allowed border-slate-300/30 bg-slate-300/40 text-slate-500 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-500"
+                  : "cursor-not-allowed border-slate-300/30 bg-slate-300/40 text-slate-500 opacity-40 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-500"
               }`}
               aria-label="Next image"
             >
@@ -186,14 +237,31 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
   const projects = useMemo<ProjectItem[]>(
     () => [
       {
+        slug: "saigo-shopping-list",
+        name: "Saigo Shopping List",
+        description: t.projectsSection.items.saigoShoppingList,
+        technologies: ["Expo", "React Native", "Notifications"],
+        actionType: "private",
+        images: 8,
+      },
+      {
+        slug: "tms",
+        name: "TMS",
+        description: t.projectsSection.items.tms,
+        technologies: ["Next.js", "Supabase", "Tailwind CSS"],
+        actionType: "private",
+        images: 7,
+        coverImage: 2,
+      },
+      {
         slug: "rithy",
         name: "Rithy",
         description: t.projectsSection.items.rithy,
         technologies: ["Expo", "Android Studio"],
-        actionType: "download",
+        actionType: "downloadApk",
         actionHref:
           "https://drive.google.com/file/d/19ZzDwq_8sxpxezDSIWjmm4TXy7sMSQU0/view",
-        images: 1,
+        images: 4,
       },
       {
         slug: "desis-kitchen",
@@ -227,14 +295,6 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
         name: "Pokemon Game",
         description: t.projectsSection.items.pokemonGame,
         technologies: ["RPG Maker XP", "Ruby"],
-        actionType: "private",
-        images: 1,
-      },
-      {
-        slug: "tms",
-        name: "TMS",
-        description: t.projectsSection.items.tms,
-        technologies: ["Next.js", "Supabase", "Tailwind CSS"],
         actionType: "private",
         images: 1,
       },
@@ -322,7 +382,7 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                   className="relative block aspect-[16/10] w-full overflow-hidden bg-slate-200 text-left dark:bg-slate-900"
                 >
                   <Image
-                    src={`/projects/${project.slug}/1.png`}
+                    src={`/projects/${project.slug}/${project.coverImage ?? 1}.png`}
                     alt={project.name}
                     fill
                     className="object-cover transition duration-300 hover:scale-[1.03]"
@@ -362,7 +422,8 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                       href={project.actionHref}
                       labels={{
                         visit: t.projectsSection.visit,
-                        download: t.projectsSection.downloadApk,
+                        download: t.projectsSection.download,
+                        downloadApk: t.projectsSection.downloadApk,
                         github: t.projectsSection.github,
                         private: t.projectsSection.private,
                       }}

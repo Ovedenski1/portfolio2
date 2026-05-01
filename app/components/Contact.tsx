@@ -142,6 +142,11 @@ export default function ContactSection({ language }: ContactSectionProps) {
                 autoComplete="off"
               />
 
+              {/* ✅ PRIVACY TEXT (only thing added) */}
+              <p className="text-xs leading-5 text-slate-500 dark:text-slate-400">
+                {t.contactSection.privacyNote}
+              </p>
+
               <button
                 type="submit"
                 disabled={formState === "loading"}

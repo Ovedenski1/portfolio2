@@ -143,10 +143,13 @@ export const translations = {
     projectsSection: {
       title: "Projects",
       visit: "Visit website",
+      download: "Download",
       downloadApk: "Download APK",
       github: "GitHub",
       private: "Private",
       items: {
+        saigoShoppingList:
+          "As the name suggests, this will be your last shopping list. It sends you notifications when you are at the shop.",
         rithy:
           "A mobile app concept designed as a writing helper with a simple, focused user experience.",
         desisKitchen:
@@ -187,6 +190,8 @@ export const translations = {
       sending: "Sending...",
       successMessage: "Your message was sent successfully.",
       errorMessage: "Something went wrong. Please try again.",
+      privacyNote:
+  "Your email will only be used to reply to your message. It will not be shared or used for marketing.",
     },
   },
 
@@ -322,10 +327,13 @@ export const translations = {
     projectsSection: {
       title: "Проекти",
       visit: "Към сайта",
+      download: "Изтегли",
       downloadApk: "Изтегли APK",
       github: "GitHub",
       private: "Частен",
       items: {
+        saigoShoppingList:
+          "Както подсказва името, това ще бъде последният ти списък за пазаруване. Изпраща известия, когато си в магазина.",
         rithy:
           "Концепция за мобилно приложение, създадено като помощник за писане с изчистено и фокусирано изживяване.",
         desisKitchen:
@@ -366,6 +374,8 @@ export const translations = {
       sending: "Изпращане...",
       successMessage: "Съобщението беше изпратено успешно.",
       errorMessage: "Възникна проблем. Моля, опитайте отново.",
+      privacyNote:
+  "Вашият имейл ще бъде използван само за отговор на съобщението ви. Няма да бъде споделян или използван за маркетинг.",
     },
   },
 
@@ -502,10 +512,13 @@ export const translations = {
     projectsSection: {
       title: "Projekte",
       visit: "Website besuchen",
+      download: "Herunterladen",
       downloadApk: "APK herunterladen",
       github: "GitHub",
       private: "Privat",
       items: {
+        saigoShoppingList:
+          "Wie der Name schon sagt, wird dies deine letzte Einkaufsliste sein. Sie sendet dir Benachrichtigungen, wenn du im Geschäft bist.",
         rithy:
           "Ein mobiles App-Konzept, das als Schreibassistent mit einer einfachen und fokussierten Nutzererfahrung entworfen wurde.",
         desisKitchen:
@@ -546,6 +559,8 @@ export const translations = {
       sending: "Wird gesendet...",
       successMessage: "Ihre Nachricht wurde erfolgreich gesendet.",
       errorMessage: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      privacyNote:
+  "Ihre E-Mail-Adresse wird nur verwendet, um auf Ihre Nachricht zu antworten. Sie wird nicht weitergegeben oder für Marketingzwecke verwendet.",
     },
   },
 
@@ -682,10 +697,13 @@ export const translations = {
     projectsSection: {
       title: "プロジェクト",
       visit: "サイトを見る",
+      download: "ダウンロード",
       downloadApk: "APKをダウンロード",
       github: "GitHub",
       private: "非公開",
       items: {
+        saigoShoppingList:
+          "名前のとおり、これが最後の買い物リストになることを目指したアプリです。お店に着いたときに通知を送ります。",
         rithy:
           "シンプルで集中しやすい体験を目指して設計した、執筆支援用のモバイルアプリ構想です。",
         desisKitchen:
@@ -726,6 +744,8 @@ export const translations = {
       sending: "送信中...",
       successMessage: "メッセージは正常に送信されました。",
       errorMessage: "問題が発生しました。もう一度お試しください。",
+      privacyNote:
+  "メールアドレスはお問い合わせへの返信のみに使用されます。共有されたり、マーケティング目的で使用されることはありません。",
     },
   },
 } as const;
