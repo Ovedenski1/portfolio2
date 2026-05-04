@@ -237,13 +237,14 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
   const projects = useMemo<ProjectItem[]>(
     () => [
       {
-        slug: "saigo-shopping-list",
-        name: "Saigo Shopping List",
-        description: t.projectsSection.items.saigoShoppingList,
-        technologies: ["Expo", "React Native", "Notifications"],
-        actionType: "private",
-        images: 8,
-      },
+  slug: "saigo-shopping-list",
+  name: "Saigo Shopping List",
+  description: t.projectsSection.items.saigoShoppingList,
+  technologies: ["Expo", "React Native", "OpenStreetMap"],
+  actionType: "downloadApk",
+  actionHref: "https://drive.google.com/file/d/172SiLT_ZU1T1hrS_TQu8rOmOXt_c55Hf/view?usp=sharing",
+  images: 8,
+},
       {
         slug: "tms",
         name: "TMS",

@@ -148,29 +148,29 @@ export const translations = {
       github: "GitHub",
       private: "Private",
       items: {
-        saigoShoppingList:
-          "As the name suggests, this will be your last shopping list. It sends you notifications when you are at the shop.",
-        rithy:
-          "A mobile app concept designed as a writing helper with a simple, focused user experience.",
-        desisKitchen:
-          "A recipe app built for my mom, made to organize and present homemade dishes in a clean way.",
-        sheepGame:
-          "A small game project about catching sheep, created as a fun experimental idea.",
-        diceGame:
-          "A demo dice game inspired by anime-style powers and simple browser gameplay.",
-        pokemonGame:
-          "A Bulgaria-inspired monster adventure project that is currently private.",
-        tms:
-          "A translation management system concept for organizing projects and workflows, currently private.",
-        profilms:
-          "An alternative website concept for Pro Films, created as a practice and redesign project.",
-        poGenerator:
-          "A simple tool for generating PO-style project files and structured translation content.",
-        kizuna:
-          "A Japanese learning platform concept focused on courses and accessible study content.",
-        pokko:
-          "A gaming website project with a modern interface and content-focused design.",
-      },
+  saigoShoppingList:
+    "As the name suggests, this will be your last shopping list. It uses maps to help you when you are near the shop.",
+  rithy:
+    "A mobile app designed as a writing helper with a simple, focused user experience.",
+  desisKitchen:
+    "A recipe app built for my mom, made to organize and present homemade dishes in a clean way.",
+  sheepGame:
+    "A small game project about catching sheep, created as a fun experimental idea.",
+  diceGame:
+    "A demo dice game inspired by anime-style powers and simple browser gameplay.",
+  pokemonGame:
+    "A Bulgaria-inspired monster adventure project that is currently private.",
+  tms:
+    "A translation management system for organizing projects and workflows, currently private.",
+  profilms:
+    "An alternative website for Pro Films, created as a practice and redesign project.",
+  poGenerator:
+    "A simple tool for generating PO-style project files and structured translation content.",
+  kizuna:
+    "A Japanese learning platform focused on courses and accessible study content.",
+  pokko:
+    "A gaming website project with a modern interface and content-focused design.",
+},
     },
     localizationSection: {
       title: "Brands I've worked with",
@@ -332,29 +332,29 @@ export const translations = {
       github: "GitHub",
       private: "Частен",
       items: {
-        saigoShoppingList:
-          "Както подсказва името, това ще бъде последният ти списък за пазаруване. Изпраща известия, когато си в магазина.",
-        rithy:
-          "Концепция за мобилно приложение, създадено като помощник за писане с изчистено и фокусирано изживяване.",
-        desisKitchen:
-          "Приложение за рецепти, създадено за майка ми, с цел подредено и приятно представяне на домашни ястия.",
-        sheepGame:
-          "Малък игрови проект за ловене на овце, създаден като забавна експериментална идея.",
-        diceGame:
-          "Демо игра със зарове, вдъхновена от аниме стил и опростен браузърен геймплей.",
-        pokemonGame:
-          "Приключенски проект, вдъхновен от България, който в момента е частен.",
-        tms:
-          "Концепция за система за управление на преводачески проекти и работни процеси, която в момента е частна.",
-        profilms:
-          "Алтернативна концепция за уебсайт на Pro Films, създадена като упражнение и дизайнерски експеримент.",
-        poGenerator:
-          "Лесен инструмент за генериране на PO файлове и структурирано преводаческо съдържание.",
-        kizuna:
-          "Концепция за платформа за изучаване на японски език с курсове и достъпно учебно съдържание.",
-        pokko:
-          "Проект за уебсайт за игри с модерен интерфейс и дизайн, насочен към съдържанието.",
-      },
+  saigoShoppingList:
+    "Както подсказва името, това ще бъде последният ти списък за пазаруване. Използва карти, за да ти помага, когато си близо до магазина.",
+  rithy:
+    "Мобилно приложение, създадено като помощник за писане с изчистено и фокусирано изживяване.",
+  desisKitchen:
+    "Приложение за рецепти, създадено за майка ми, с цел подредено и приятно представяне на домашни ястия.",
+  sheepGame:
+    "Малък игрови проект за ловене на овце, създаден като забавна експериментална идея.",
+  diceGame:
+    "Демо игра със зарове, вдъхновена от аниме стил и опростен браузърен геймплей.",
+  pokemonGame:
+    "Приключенски проект, вдъхновен от България, който в момента е частен.",
+  tms:
+    "Система за управление на преводачески проекти и работни процеси, която в момента е частна.",
+  profilms:
+    "Алтернативен уебсайт на Pro Films, създаден като упражнение и дизайнерски експеримент.",
+  poGenerator:
+    "Лесен инструмент за генериране на PO файлове и структурирано преводаческо съдържание.",
+  kizuna:
+    "Платформа за изучаване на японски език с курсове и достъпно учебно съдържание.",
+  pokko:
+    "Проект за уебсайт за игри с модерен интерфейс и дизайн, насочен към съдържанието.",
+},
     },
     localizationSection: {
       title: "Брандове, с които съм работил",
@@ -517,29 +517,29 @@ export const translations = {
       github: "GitHub",
       private: "Privat",
       items: {
-        saigoShoppingList:
-          "Wie der Name schon sagt, wird dies deine letzte Einkaufsliste sein. Sie sendet dir Benachrichtigungen, wenn du im Geschäft bist.",
-        rithy:
-          "Ein mobiles App-Konzept, das als Schreibassistent mit einer einfachen und fokussierten Nutzererfahrung entworfen wurde.",
-        desisKitchen:
-          "Eine Rezept-App für meine Mutter, erstellt zur übersichtlichen und schönen Darstellung hausgemachter Gerichte.",
-        sheepGame:
-          "Ein kleines Spielprojekt über das Einfangen von Schafen, entstanden als spielerische Experimentieridee.",
-        diceGame:
-          "Ein Demo-Würfelspiel, inspiriert von Anime-Elementen und einfachem Browser-Gameplay.",
-        pokemonGame:
-          "Ein von Bulgarien inspiriertes Abenteuerprojekt, das derzeit privat ist.",
-        tms:
-          "Ein Konzept für ein Translation-Management-System zur Organisation von Projekten und Workflows, derzeit privat.",
-        profilms:
-          "Ein alternatives Website-Konzept für Pro Films, erstellt als Übung und Redesign-Projekt.",
-        poGenerator:
-          "Ein einfaches Tool zur Erstellung von PO-Dateien und strukturierten Übersetzungsinhalten.",
-        kizuna:
-          "Ein Plattformkonzept zum Japanischlernen mit Kursen und leicht zugänglichen Lernmaterialien.",
-        pokko:
-          "Ein Gaming-Website-Projekt mit moderner Benutzeroberfläche und inhaltsorientiertem Design.",
-      },
+  saigoShoppingList:
+    "Wie der Name schon sagt, wird dies deine letzte Einkaufsliste sein. Sie nutzt Karten, um dir zu helfen, wenn du in der Nähe des Geschäfts bist.",
+  rithy:
+    "Eine mobile App, die als Schreibassistent mit einer einfachen und fokussierten Nutzererfahrung entwickelt wurde.",
+  desisKitchen:
+    "Eine Rezept-App für meine Mutter, erstellt zur übersichtlichen und schönen Darstellung hausgemachter Gerichte.",
+  sheepGame:
+    "Ein kleines Spielprojekt über das Einfangen von Schafen, entstanden als spielerische Experimentieridee.",
+  diceGame:
+    "Ein Demo-Würfelspiel, inspiriert von Anime-Elementen und einfachem Browser-Gameplay.",
+  pokemonGame:
+    "Ein von Bulgarien inspiriertes Abenteuerprojekt, das derzeit privat ist.",
+  tms:
+    "Ein Translation-Management-System zur Organisation von Projekten und Workflows, derzeit privat.",
+  profilms:
+    "Eine alternative Website für Pro Films, erstellt als Übung und Redesign-Projekt.",
+  poGenerator:
+    "Ein einfaches Tool zur Erstellung von PO-Dateien und strukturierten Übersetzungsinhalten.",
+  kizuna:
+    "Eine Plattform zum Japanischlernen mit Kursen und leicht zugänglichen Lernmaterialien.",
+  pokko:
+    "Ein Gaming-Website-Projekt mit moderner Benutzeroberfläche und inhaltsorientiertem Design.",
+},
     },
     localizationSection: {
       title: "Marken, mit denen ich gearbeitet habe",
@@ -702,29 +702,29 @@ export const translations = {
       github: "GitHub",
       private: "非公開",
       items: {
-        saigoShoppingList:
-          "名前のとおり、これが最後の買い物リストになることを目指したアプリです。お店に着いたときに通知を送ります。",
-        rithy:
-          "シンプルで集中しやすい体験を目指して設計した、執筆支援用のモバイルアプリ構想です。",
-        desisKitchen:
-          "母のために作ったレシピアプリで、家庭料理を見やすく整理して紹介することを目的としています。",
-        sheepGame:
-          "羊を捕まえることをテーマにした、小さな実験的ゲームプロジェクトです。",
-        diceGame:
-          "アニメ風の要素とシンプルなブラウザゲームプレイに着想を得たデモ用ダイスゲームです。",
-        pokemonGame:
-          "ブルガリアをイメージして作った冒険プロジェクトで、現在は非公開です。",
-        tms:
-          "翻訳案件やワークフローを整理するための翻訳管理システム構想で、現在は非公開です。",
-        profilms:
-          "Pro Films 向けに試作した別案のウェブサイトで、練習とデザイン検証を目的に制作しました。",
-        poGenerator:
-          "PO形式のファイルや構造化された翻訳データを作成するためのシンプルなツールです。",
-        kizuna:
-          "コースと学習コンテンツをわかりやすく提供する日本語学習プラットフォームの構想です。",
-        pokko:
-          "モダンなUIとコンテンツ重視の設計を持つゲーム系ウェブサイトのプロジェクトです。",
-      },
+  saigoShoppingList:
+    "名前のとおり、これが最後の買い物リストになることを目指したアプリです。お店の近くにいるときに役立つよう、地図を使用します。",
+  rithy:
+    "シンプルで集中しやすい体験を目指して作成した、執筆支援用のモバイルアプリです。",
+  desisKitchen:
+    "母のために作ったレシピアプリで、家庭料理を見やすく整理して紹介することを目的としています。",
+  sheepGame:
+    "羊を捕まえることをテーマにした、小さな実験的ゲームプロジェクトです。",
+  diceGame:
+    "アニメ風の要素とシンプルなブラウザゲームプレイに着想を得たデモ用ダイスゲームです。",
+  pokemonGame:
+    "ブルガリアをイメージして作った冒険プロジェクトで、現在は非公開です。",
+  tms:
+    "翻訳案件やワークフローを整理するための翻訳管理システムで、現在は非公開です。",
+  profilms:
+    "Pro Films 向けに試作した別案のウェブサイトで、練習とデザイン検証を目的に制作しました。",
+  poGenerator:
+    "PO形式のファイルや構造化された翻訳データを作成するためのシンプルなツールです。",
+  kizuna:
+    "コースと学習コンテンツをわかりやすく提供する日本語学習プラットフォームです。",
+  pokko:
+    "モダンなUIとコンテンツ重視の設計を持つゲーム系ウェブサイトのプロジェクトです。",
+},
     },
     localizationSection: {
       title: "これまでに携わったブランド",
