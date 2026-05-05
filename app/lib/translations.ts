@@ -147,30 +147,35 @@ export const translations = {
       downloadApk: "Download APK",
       github: "GitHub",
       private: "Private",
+      inProgress: "In progress",
       items: {
-  saigoShoppingList:
-    "As the name suggests, this will be your last shopping list. It uses maps to help you when you are near the shop.",
-  rithy:
-    "A mobile app designed as a writing helper with a simple, focused user experience.",
-  desisKitchen:
-    "A recipe app built for my mom, made to organize and present homemade dishes in a clean way.",
-  sheepGame:
-    "A small game project about catching sheep, created as a fun experimental idea.",
-  diceGame:
-    "A demo dice game inspired by anime-style powers and simple browser gameplay.",
-  pokemonGame:
-    "A Bulgaria-inspired monster adventure project that is currently private.",
-  tms:
-    "A translation management system for organizing projects and workflows, currently private.",
-  profilms:
-    "An alternative website for Pro Films, created as a practice and redesign project.",
-  poGenerator:
-    "A simple tool for generating PO-style project files and structured translation content.",
-  kizuna:
-    "A Japanese learning platform focused on courses and accessible study content.",
-  pokko:
-    "A gaming website project with a modern interface and content-focused design.",
-},
+        saigoShoppingList:
+          "As the name suggests, this will be your last shopping list. It uses maps to help you when you are near the shop.",
+        rithy:
+          "A mobile app designed as a writing helper with a simple, focused user experience.",
+        desisKitchen:
+          "A recipe app built for my mom, made to organize and present homemade dishes in a clean way.",
+        sheepGame:
+          "A small game project about catching sheep, created as a fun experimental idea.",
+        diceGame:
+          "A demo dice game inspired by anime-style powers and simple browser gameplay.",
+        pokemonGame:
+          "A Bulgaria-inspired monster adventure project that is currently private.",
+        tms:
+          "A translation management system for organizing projects and workflows, currently private.",
+        dumichka:
+          "A word guessing game built with Next.js and Supabase, focused on simple and engaging gameplay.",
+        profilms:
+          "An alternative website for Pro Films, created as a practice and redesign project.",
+        poGenerator:
+          "A simple tool for generating PO-style project files and structured translation content.",
+        kizuna:
+          "A Japanese learning platform focused on courses and accessible study content.",
+        pokko:
+          "A gaming website project with a modern interface and content-focused design.",
+        pugExpressWebsite:
+          "A concept website for a transportation firm, built with Next.js and currently in progress.",
+      },
     },
     localizationSection: {
       title: "Brands I've worked with",
@@ -191,7 +196,7 @@ export const translations = {
       successMessage: "Your message was sent successfully.",
       errorMessage: "Something went wrong. Please try again.",
       privacyNote:
-  "Your email will only be used to reply to your message. It will not be shared or used for marketing.",
+        "Your email will only be used to reply to your message. It will not be shared or used for marketing.",
     },
   },
 
@@ -331,30 +336,35 @@ export const translations = {
       downloadApk: "Изтегли APK",
       github: "GitHub",
       private: "Частен",
+      inProgress: "В процес на разработка",
       items: {
-  saigoShoppingList:
-    "Както подсказва името, това ще бъде последният ти списък за пазаруване. Използва карти, за да ти помага, когато си близо до магазина.",
-  rithy:
-    "Мобилно приложение, създадено като помощник за писане с изчистено и фокусирано изживяване.",
-  desisKitchen:
-    "Приложение за рецепти, създадено за майка ми, с цел подредено и приятно представяне на домашни ястия.",
-  sheepGame:
-    "Малък игрови проект за ловене на овце, създаден като забавна експериментална идея.",
-  diceGame:
-    "Демо игра със зарове, вдъхновена от аниме стил и опростен браузърен геймплей.",
-  pokemonGame:
-    "Приключенски проект, вдъхновен от България, който в момента е частен.",
-  tms:
-    "Система за управление на преводачески проекти и работни процеси, която в момента е частна.",
-  profilms:
-    "Алтернативен уебсайт на Pro Films, създаден като упражнение и дизайнерски експеримент.",
-  poGenerator:
-    "Лесен инструмент за генериране на PO файлове и структурирано преводаческо съдържание.",
-  kizuna:
-    "Платформа за изучаване на японски език с курсове и достъпно учебно съдържание.",
-  pokko:
-    "Проект за уебсайт за игри с модерен интерфейс и дизайн, насочен към съдържанието.",
-},
+        saigoShoppingList:
+          "Както подсказва името, това ще бъде последният ти списък за пазаруване. Използва карти, за да ти помага, когато си близо до магазина.",
+        rithy:
+          "Мобилно приложение, създадено като помощник за писане с изчистено и фокусирано изживяване.",
+        desisKitchen:
+          "Приложение за рецепти, създадено за майка ми, с цел подредено и приятно представяне на домашни ястия.",
+        sheepGame:
+          "Малък игрови проект за ловене на овце, създаден като забавна експериментална идея.",
+        diceGame:
+          "Демо игра със зарове, вдъхновена от аниме стил и опростен браузърен геймплей.",
+        pokemonGame:
+          "Приключенски проект, вдъхновен от България, който в момента е частен.",
+        tms:
+          "Система за управление на преводачески проекти и работни процеси, която в момента е частна.",
+        dumichka:
+          "Игра за отгатване на думи, създадена с Next.js и Supabase, с фокус върху лесен и увлекателен геймплей.",
+        profilms:
+          "Алтернативен уебсайт на Pro Films, създаден като упражнение и дизайнерски експеримент.",
+        poGenerator:
+          "Лесен инструмент за генериране на PO файлове и структурирано преводаческо съдържание.",
+        kizuna:
+          "Платформа за изучаване на японски език с курсове и достъпно учебно съдържание.",
+        pokko:
+          "Проект за уебсайт за игри с модерен интерфейс и дизайн, насочен към съдържанието.",
+        pugExpressWebsite:
+          "Концептуален уебсайт за транспортна фирма, създаден с Next.js и в момента в процес на разработка.",
+      },
     },
     localizationSection: {
       title: "Брандове, с които съм работил",
@@ -375,7 +385,7 @@ export const translations = {
       successMessage: "Съобщението беше изпратено успешно.",
       errorMessage: "Възникна проблем. Моля, опитайте отново.",
       privacyNote:
-  "Вашият имейл ще бъде използван само за отговор на съобщението ви. Няма да бъде споделян или използван за маркетинг.",
+        "Вашият имейл ще бъде използван само за отговор на съобщението ви. Няма да бъде споделян или използван за маркетинг.",
     },
   },
 
@@ -516,30 +526,35 @@ export const translations = {
       downloadApk: "APK herunterladen",
       github: "GitHub",
       private: "Privat",
+      inProgress: "In Arbeit",
       items: {
-  saigoShoppingList:
-    "Wie der Name schon sagt, wird dies deine letzte Einkaufsliste sein. Sie nutzt Karten, um dir zu helfen, wenn du in der Nähe des Geschäfts bist.",
-  rithy:
-    "Eine mobile App, die als Schreibassistent mit einer einfachen und fokussierten Nutzererfahrung entwickelt wurde.",
-  desisKitchen:
-    "Eine Rezept-App für meine Mutter, erstellt zur übersichtlichen und schönen Darstellung hausgemachter Gerichte.",
-  sheepGame:
-    "Ein kleines Spielprojekt über das Einfangen von Schafen, entstanden als spielerische Experimentieridee.",
-  diceGame:
-    "Ein Demo-Würfelspiel, inspiriert von Anime-Elementen und einfachem Browser-Gameplay.",
-  pokemonGame:
-    "Ein von Bulgarien inspiriertes Abenteuerprojekt, das derzeit privat ist.",
-  tms:
-    "Ein Translation-Management-System zur Organisation von Projekten und Workflows, derzeit privat.",
-  profilms:
-    "Eine alternative Website für Pro Films, erstellt als Übung und Redesign-Projekt.",
-  poGenerator:
-    "Ein einfaches Tool zur Erstellung von PO-Dateien und strukturierten Übersetzungsinhalten.",
-  kizuna:
-    "Eine Plattform zum Japanischlernen mit Kursen und leicht zugänglichen Lernmaterialien.",
-  pokko:
-    "Ein Gaming-Website-Projekt mit moderner Benutzeroberfläche und inhaltsorientiertem Design.",
-},
+        saigoShoppingList:
+          "Wie der Name schon sagt, wird dies deine letzte Einkaufsliste sein. Sie nutzt Karten, um dir zu helfen, wenn du in der Nähe des Geschäfts bist.",
+        rithy:
+          "Eine mobile App, die als Schreibassistent mit einer einfachen und fokussierten Nutzererfahrung entwickelt wurde.",
+        desisKitchen:
+          "Eine Rezept-App für meine Mutter, erstellt zur übersichtlichen und schönen Darstellung hausgemachter Gerichte.",
+        sheepGame:
+          "Ein kleines Spielprojekt über das Einfangen von Schafen, entstanden als spielerische Experimentieridee.",
+        diceGame:
+          "Ein Demo-Würfelspiel, inspiriert von Anime-Elementen und einfachem Browser-Gameplay.",
+        pokemonGame:
+          "Ein von Bulgarien inspiriertes Abenteuerprojekt, das derzeit privat ist.",
+        tms:
+          "Ein Translation-Management-System zur Organisation von Projekten und Workflows, derzeit privat.",
+        dumichka:
+          "Ein Wortratespiel, entwickelt mit Next.js und Supabase, mit Fokus auf einfachem und unterhaltsamem Gameplay.",
+        profilms:
+          "Eine alternative Website für Pro Films, erstellt als Übung und Redesign-Projekt.",
+        poGenerator:
+          "Ein einfaches Tool zur Erstellung von PO-Dateien und strukturierten Übersetzungsinhalten.",
+        kizuna:
+          "Eine Plattform zum Japanischlernen mit Kursen und leicht zugänglichen Lernmaterialien.",
+        pokko:
+          "Ein Gaming-Website-Projekt mit moderner Benutzeroberfläche und inhaltsorientiertem Design.",
+        pugExpressWebsite:
+          "Eine Konzept-Website für ein Transportunternehmen, erstellt mit Next.js und derzeit in Arbeit.",
+      },
     },
     localizationSection: {
       title: "Marken, mit denen ich gearbeitet habe",
@@ -560,7 +575,7 @@ export const translations = {
       successMessage: "Ihre Nachricht wurde erfolgreich gesendet.",
       errorMessage: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
       privacyNote:
-  "Ihre E-Mail-Adresse wird nur verwendet, um auf Ihre Nachricht zu antworten. Sie wird nicht weitergegeben oder für Marketingzwecke verwendet.",
+        "Ihre E-Mail-Adresse wird nur verwendet, um auf Ihre Nachricht zu antworten. Sie wird nicht weitergegeben oder für Marketingzwecke verwendet.",
     },
   },
 
@@ -701,30 +716,35 @@ export const translations = {
       downloadApk: "APKをダウンロード",
       github: "GitHub",
       private: "非公開",
+      inProgress: "制作中",
       items: {
-  saigoShoppingList:
-    "名前のとおり、これが最後の買い物リストになることを目指したアプリです。お店の近くにいるときに役立つよう、地図を使用します。",
-  rithy:
-    "シンプルで集中しやすい体験を目指して作成した、執筆支援用のモバイルアプリです。",
-  desisKitchen:
-    "母のために作ったレシピアプリで、家庭料理を見やすく整理して紹介することを目的としています。",
-  sheepGame:
-    "羊を捕まえることをテーマにした、小さな実験的ゲームプロジェクトです。",
-  diceGame:
-    "アニメ風の要素とシンプルなブラウザゲームプレイに着想を得たデモ用ダイスゲームです。",
-  pokemonGame:
-    "ブルガリアをイメージして作った冒険プロジェクトで、現在は非公開です。",
-  tms:
-    "翻訳案件やワークフローを整理するための翻訳管理システムで、現在は非公開です。",
-  profilms:
-    "Pro Films 向けに試作した別案のウェブサイトで、練習とデザイン検証を目的に制作しました。",
-  poGenerator:
-    "PO形式のファイルや構造化された翻訳データを作成するためのシンプルなツールです。",
-  kizuna:
-    "コースと学習コンテンツをわかりやすく提供する日本語学習プラットフォームです。",
-  pokko:
-    "モダンなUIとコンテンツ重視の設計を持つゲーム系ウェブサイトのプロジェクトです。",
-},
+        saigoShoppingList:
+          "名前のとおり、これが最後の買い物リストになることを目指したアプリです。お店の近くにいるときに役立つよう、地図を使用します。",
+        rithy:
+          "シンプルで集中しやすい体験を目指して作成した、執筆支援用のモバイルアプリです。",
+        desisKitchen:
+          "母のために作ったレシピアプリで、家庭料理を見やすく整理して紹介することを目的としています。",
+        sheepGame:
+          "羊を捕まえることをテーマにした、小さな実験的ゲームプロジェクトです。",
+        diceGame:
+          "アニメ風の要素とシンプルなブラウザゲームプレイに着想を得たデモ用ダイスゲームです。",
+        pokemonGame:
+          "ブルガリアをイメージして作った冒険プロジェクトで、現在は非公開です。",
+        tms:
+          "翻訳案件やワークフローを整理するための翻訳管理システムで、現在は非公開です。",
+        dumichka:
+          "Next.js と Supabase で作成した単語当てゲームで、シンプルで楽しいゲーム体験を重視しています。",
+        profilms:
+          "Pro Films 向けに試作した別案のウェブサイトで、練習とデザイン検証を目的に制作しました。",
+        poGenerator:
+          "PO形式のファイルや構造化された翻訳データを作成するためのシンプルなツールです。",
+        kizuna:
+          "コースと学習コンテンツをわかりやすく提供する日本語学習プラットフォームです。",
+        pokko:
+          "モダンなUIとコンテンツ重視の設計を持つゲーム系ウェブサイトのプロジェクトです。",
+        pugExpressWebsite:
+          "Next.js で作成中の、運送会社向けコンセプトサイトです。",
+      },
     },
     localizationSection: {
       title: "これまでに携わったブランド",
@@ -745,7 +765,7 @@ export const translations = {
       successMessage: "メッセージは正常に送信されました。",
       errorMessage: "問題が発生しました。もう一度お試しください。",
       privacyNote:
-  "メールアドレスはお問い合わせへの返信のみに使用されます。共有されたり、マーケティング目的で使用されることはありません。",
+        "メールアドレスはお問い合わせへの返信のみに使用されます。共有されたり、マーケティング目的で使用されることはありません。",
     },
   },
 } as const;

@@ -14,7 +14,8 @@ type ProjectActionType =
   | "download"
   | "downloadApk"
   | "github"
-  | "private";
+  | "private"
+  | "inProgress";
 
 type ProjectItem = {
   slug: string;
@@ -45,17 +46,18 @@ function ProjectButton({
     downloadApk: string;
     github: string;
     private: string;
+    inProgress: string;
   };
 }) {
   const baseClass =
     "inline-flex h-11 min-w-[140px] items-center justify-center rounded-full px-5 text-sm font-semibold transition";
 
-  if (type === "private") {
+  if (type === "private" || type === "inProgress") {
     return (
       <span
         className={`${baseClass} cursor-not-allowed border border-slate-300/80 bg-slate-200/70 text-slate-500 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-400`}
       >
-        {labels.private}
+        {type === "inProgress" ? labels.inProgress : labels.private}
       </span>
     );
   }
@@ -237,14 +239,15 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
   const projects = useMemo<ProjectItem[]>(
     () => [
       {
-  slug: "saigo-shopping-list",
-  name: "Saigo Shopping List",
-  description: t.projectsSection.items.saigoShoppingList,
-  technologies: ["Expo", "React Native", "OpenStreetMap"],
-  actionType: "downloadApk",
-  actionHref: "https://drive.google.com/file/d/172SiLT_ZU1T1hrS_TQu8rOmOXt_c55Hf/view?usp=sharing",
-  images: 8,
-},
+        slug: "saigo-shopping-list",
+        name: "Saigo Shopping List",
+        description: t.projectsSection.items.saigoShoppingList,
+        technologies: ["Expo", "React Native", "OpenStreetMap"],
+        actionType: "downloadApk",
+        actionHref:
+          "https://drive.google.com/file/d/172SiLT_ZU1T1hrS_TQu8rOmOXt_c55Hf/view?usp=sharing",
+        images: 8,
+      },
       {
         slug: "tms",
         name: "TMS",
@@ -253,6 +256,15 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
         actionType: "private",
         images: 7,
         coverImage: 2,
+      },
+      {
+        slug: "dumichka",
+        name: "Dumichki",
+        description: t.projectsSection.items.dumichka,
+        technologies: ["Next.js", "Supabase"],
+        actionType: "visit",
+        actionHref: "https://duma-psi.vercel.app/",
+        images: 2,
       },
       {
         slug: "rithy",
@@ -342,6 +354,14 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
         actionHref: "https://game-swap-6wgn.vercel.app/",
         images: 3,
       },
+      {
+        slug: "pug-express-website",
+        name: "Pug Express Website",
+        description: t.projectsSection.items.pugExpressWebsite,
+        technologies: ["Next.js"],
+        actionType: "inProgress",
+        images: 1,
+      },
     ],
     [t.projectsSection.items]
   );
@@ -427,6 +447,7 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                         downloadApk: t.projectsSection.downloadApk,
                         github: t.projectsSection.github,
                         private: t.projectsSection.private,
+                        inProgress: t.projectsSection.inProgress,
                       }}
                     />
                   </div>
