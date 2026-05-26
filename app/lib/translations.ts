@@ -173,6 +173,8 @@ export const translations = {
           "A Japanese learning platform focused on courses and accessible study content.",
         pokko:
           "A gaming website project with a modern interface and content-focused design.",
+        pokotoba:
+          "A personal self-check tool for vocabulary and kanji from the Genki textbooks. It helps with vocabulary practice, kanji recognition, and reinforcement through short quizzes.",
         pugExpressWebsite:
           "A concept website for a transportation firm, built with Next.js and currently in progress.",
       },
@@ -362,6 +364,8 @@ export const translations = {
           "Платформа за изучаване на японски език с курсове и достъпно учебно съдържание.",
         pokko:
           "Проект за уебсайт за игри с модерен интерфейс и дизайн, насочен към съдържанието.",
+        pokotoba:
+          "Личен инструмент за самопроверка върху думи и канджи от учебниците Genki. Помага за упражняване на лексика, разпознаване на канджи и затвърждаване чрез кратки тестове.",
         pugExpressWebsite:
           "Концептуален уебсайт за транспортна фирма, създаден с Next.js и в момента в процес на разработка.",
       },
@@ -552,6 +556,8 @@ export const translations = {
           "Eine Plattform zum Japanischlernen mit Kursen und leicht zugänglichen Lernmaterialien.",
         pokko:
           "Ein Gaming-Website-Projekt mit moderner Benutzeroberfläche und inhaltsorientiertem Design.",
+        pokotoba:
+          "Ein persönliches Selbsttest-Tool für Vokabeln und Kanji aus den Genki-Lehrbüchern. Es hilft beim Üben von Wortschatz, beim Erkennen von Kanji und beim Festigen durch kurze Tests.",
         pugExpressWebsite:
           "Eine Konzept-Website für ein Transportunternehmen, erstellt mit Next.js und derzeit in Arbeit.",
       },
@@ -742,6 +748,8 @@ export const translations = {
           "コースと学習コンテンツをわかりやすく提供する日本語学習プラットフォームです。",
         pokko:
           "モダンなUIとコンテンツ重視の設計を持つゲーム系ウェブサイトのプロジェクトです。",
+        pokotoba:
+          "Genki（げんき）の教科書に出てくる語彙（ごい）と漢字（かんじ）を自分で確認できる学習ツールです。短いクイズで単語練習、漢字認識、復習をサポートします。",
         pugExpressWebsite:
           "Next.js で作成中の、運送会社向けコンセプトサイトです。",
       },

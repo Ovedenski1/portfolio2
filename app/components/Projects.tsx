@@ -239,6 +239,15 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
   const projects = useMemo<ProjectItem[]>(
     () => [
       {
+        slug: "pokotoba",
+        name: "Pokotoba",
+        description: t.projectsSection.items.pokotoba,
+        technologies: ["Next.js", "Supabase", "Web3", "Tailwind CSS"],
+        actionType: "visit",
+        actionHref: "https://genki-tests.vercel.app/",
+        images: 4,
+      },
+      {
         slug: "saigo-shopping-list",
         name: "Saigo Shopping List",
         description: t.projectsSection.items.saigoShoppingList,
