@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
 import type { Language } from "../lib/translations";
 import { translations } from "../lib/translations";
 
@@ -11,7 +12,7 @@ type SkillsSectionProps = {
 type LanguageMeterProps = {
   percentage: number;
   label: string;
-  level: string;
+  level: ReactNode;
 };
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
@@ -37,6 +38,60 @@ function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
   return { ref, isInView };
 }
 
+function AnimatedLevelText({
+  mainText,
+  flashText,
+}: {
+  mainText: string;
+  flashText: string;
+}) {
+  const [showFlashText, setShowFlashText] = useState(false);
+
+  useEffect(() => {
+    const holdDuration = 5000;
+    const fadeDuration = 1800;
+    const cycleDuration = holdDuration + fadeDuration;
+
+    let interval: number | null = null;
+
+    const firstTimeout = window.setTimeout(() => {
+      setShowFlashText((prev) => !prev);
+
+      interval = window.setInterval(() => {
+        setShowFlashText((prev) => !prev);
+      }, cycleDuration);
+    }, holdDuration);
+
+    return () => {
+      window.clearTimeout(firstTimeout);
+
+      if (interval) {
+        window.clearInterval(interval);
+      }
+    };
+  }, []);
+
+  return (
+    <span className="inline-grid min-h-[22px] min-w-[88px] place-items-center overflow-hidden whitespace-nowrap sm:min-w-[145px]">
+      <span
+        className={`col-start-1 row-start-1 transition-opacity duration-[1800ms] ease-in-out ${
+          showFlashText ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        {mainText}
+      </span>
+
+      <span
+        className={`col-start-1 row-start-1 font-semibold text-emerald-500 transition-opacity duration-[1800ms] ease-in-out dark:text-emerald-300 ${
+          showFlashText ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        {flashText}
+      </span>
+    </span>
+  );
+}
+
 function LanguageMeter({ percentage, label, level }: LanguageMeterProps) {
   const { ref, isInView } = useInView<HTMLDivElement>({ threshold: 0.35 });
 
@@ -47,7 +102,7 @@ function LanguageMeter({ percentage, label, level }: LanguageMeterProps) {
   const progressOffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div ref={ref} className="flex flex-col items-center">
+    <div ref={ref} className="flex min-w-0 flex-col items-center">
       <div className="relative flex h-22 w-22 items-center justify-center sm:h-24 sm:w-24 md:h-26 md:w-26 lg:h-28 lg:w-28">
         <svg
           className="-rotate-90"
@@ -85,11 +140,11 @@ function LanguageMeter({ percentage, label, level }: LanguageMeterProps) {
         </div>
       </div>
 
-      <div className="mt-2 text-center">
+      <div className="mt-2 min-w-0 text-center">
         <p className="text-sm font-semibold text-slate-800 dark:text-slate-100 sm:text-base">
           {label}
         </p>
-        <p className="mt-1 text-xs text-slate-500 dark:text-slate-400 sm:text-sm">
+        <p className="mt-1 min-h-[22px] text-[11px] text-slate-500 dark:text-slate-400 sm:text-sm">
           {level}
         </p>
       </div>
@@ -174,21 +229,36 @@ export default function SkillsSection({ language }: SkillsSectionProps) {
             </h3>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
-            <LanguageMeter
-              percentage={100}
-              label={t.skillsSection.bulgarian}
-              level={t.skillsSection.native}
-            />
+          <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-6 md:gap-8 lg:gap-10">
+            <div className="hidden sm:block">
+              <LanguageMeter
+                percentage={100}
+                label={t.skillsSection.bulgarian}
+                level={t.skillsSection.native}
+              />
+            </div>
+
             <LanguageMeter
               percentage={90}
               label={t.skillsSection.english}
               level={t.skillsSection.professional}
             />
+
             <LanguageMeter
               percentage={30}
               label={t.skillsSection.german}
               level={t.skillsSection.basic}
+            />
+
+            <LanguageMeter
+              percentage={25}
+              label={t.skillsSection.japanese}
+              level={
+                <AnimatedLevelText
+                  mainText={t.skillsSection.n5}
+                  flashText={t.skillsSection.n4InProgress}
+                />
+              }
             />
           </div>
 
