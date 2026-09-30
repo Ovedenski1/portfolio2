@@ -57,7 +57,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden px-4 pt-4=1 pb-8 sm:px-6 sm:pt-1 sm:pb-6 md:px-8 md:pt-6 md:pb-10 lg:px-8 lg:pt-1 lg:pb-12"
+      className="relative overflow-hidden px-4 pt-4 pb-8 sm:px-6 sm:pt-1 sm:pb-6 md:px-8 md:pt-6 md:pb-10 lg:px-8 lg:pt-1 lg:pb-12"
     >
       <div
         className="pointer-events-none absolute left-[10%] top-[20%] h-44 w-44 rounded-full bg-emerald-300/10 blur-3xl"
@@ -142,7 +142,6 @@ export default function ContactSection({ language }: ContactSectionProps) {
                 autoComplete="off"
               />
 
-              {/* ✅ PRIVACY TEXT (only thing added) */}
               <p className="text-xs leading-5 text-slate-500 dark:text-slate-400">
                 {t.contactSection.privacyNote}
               </p>
@@ -210,12 +209,12 @@ export default function ContactSection({ language }: ContactSectionProps) {
 
             <div className="flex flex-col items-center gap-6 text-center">
               <a
-                href="mailto:ovedenski1@gmail.com"
+                href="mailto:lyuboslav@ovedenski.com"
                 className="flex items-center gap-3 text-slate-700 transition hover:text-emerald-500 dark:text-slate-200 dark:hover:text-emerald-300"
               >
                 <Mail className="h-5 w-5" />
                 <span className="text-lg font-semibold">
-                  ovedenski1@gmail.com
+                  lyuboslav@ovedenski.com
                 </span>
               </a>
 

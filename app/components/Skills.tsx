@@ -9,10 +9,10 @@ type SkillsSectionProps = {
   language: Language;
 };
 
-type LanguageMeterProps = {
-  percentage: number;
+type LanguageRowProps = {
   label: string;
   level: ReactNode;
+  delayMs?: number;
 };
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
@@ -48,33 +48,17 @@ function AnimatedLevelText({
   const [showFlashText, setShowFlashText] = useState(false);
 
   useEffect(() => {
-    const holdDuration = 5000;
-    const fadeDuration = 1800;
-    const cycleDuration = holdDuration + fadeDuration;
-
-    let interval: number | null = null;
-
-    const firstTimeout = window.setTimeout(() => {
+    const interval = window.setInterval(() => {
       setShowFlashText((prev) => !prev);
+    }, 5000);
 
-      interval = window.setInterval(() => {
-        setShowFlashText((prev) => !prev);
-      }, cycleDuration);
-    }, holdDuration);
-
-    return () => {
-      window.clearTimeout(firstTimeout);
-
-      if (interval) {
-        window.clearInterval(interval);
-      }
-    };
+    return () => window.clearInterval(interval);
   }, []);
 
   return (
-    <span className="inline-grid min-h-[22px] min-w-[88px] place-items-center overflow-hidden whitespace-nowrap sm:min-w-[145px]">
+    <span className="relative inline-grid min-h-[24px] min-w-[120px] place-items-start">
       <span
-        className={`col-start-1 row-start-1 transition-opacity duration-[1800ms] ease-in-out ${
+        className={`col-start-1 row-start-1 transition-opacity duration-[1400ms] ease-in-out ${
           showFlashText ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -82,7 +66,7 @@ function AnimatedLevelText({
       </span>
 
       <span
-        className={`col-start-1 row-start-1 font-semibold text-emerald-500 transition-opacity duration-[1800ms] ease-in-out dark:text-emerald-300 ${
+        className={`col-start-1 row-start-1 transition-opacity duration-[1400ms] ease-in-out ${
           showFlashText ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -92,61 +76,25 @@ function AnimatedLevelText({
   );
 }
 
-function LanguageMeter({ percentage, label, level }: LanguageMeterProps) {
-  const { ref, isInView } = useInView<HTMLDivElement>({ threshold: 0.35 });
-
-  const radius = 38;
-  const stroke = 7;
-  const normalizedRadius = radius - stroke / 2;
-  const circumference = 2 * Math.PI * normalizedRadius;
-  const progressOffset = circumference - (percentage / 100) * circumference;
+function LanguageRow({ label, level, delayMs = 0 }: LanguageRowProps) {
+  const { ref, isInView } = useInView<HTMLDivElement>({ threshold: 0.3 });
 
   return (
-    <div ref={ref} className="flex min-w-0 flex-col items-center">
-      <div className="relative flex h-22 w-22 items-center justify-center sm:h-24 sm:w-24 md:h-26 md:w-26 lg:h-28 lg:w-28">
-        <svg
-          className="-rotate-90"
-          width={radius * 2}
-          height={radius * 2}
-          viewBox={`0 0 ${radius * 2} ${radius * 2}`}
-        >
-          <circle
-            cx={radius}
-            cy={radius}
-            r={normalizedRadius}
-            stroke="currentColor"
-            strokeWidth={stroke}
-            fill="transparent"
-            className="text-slate-300/40 dark:text-slate-700/60"
-          />
-          <circle
-            cx={radius}
-            cy={radius}
-            r={normalizedRadius}
-            stroke="currentColor"
-            strokeWidth={stroke}
-            strokeLinecap="round"
-            fill="transparent"
-            strokeDasharray={circumference}
-            strokeDashoffset={isInView ? progressOffset : circumference}
-            className="text-emerald-400 transition-[stroke-dashoffset] duration-1200 ease-out"
-          />
-        </svg>
-
-        <div className="absolute text-center">
-          <span className="text-base font-bold text-slate-800 dark:text-slate-100 sm:text-lg">
-            {percentage}%
-          </span>
-        </div>
-      </div>
-
-      <div className="mt-2 min-w-0 text-center">
-        <p className="text-sm font-semibold text-slate-800 dark:text-slate-100 sm:text-base">
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${delayMs}ms` }}
+      className={`transition-all duration-700 ${
+        isInView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+      }`}
+    >
+      <div className="flex flex-col gap-1 text-center lg:text-left">
+        <span className="text-xl font-semibold text-slate-100 sm:text-2xl">
           {label}
-        </p>
-        <p className="mt-1 min-h-[22px] text-[11px] text-slate-500 dark:text-slate-400 sm:text-sm">
+        </span>
+
+        <span className="text-base font-medium text-emerald-400 dark:text-emerald-300 sm:text-lg">
           {level}
-        </p>
+        </span>
       </div>
     </div>
   );
@@ -229,36 +177,34 @@ export default function SkillsSection({ language }: SkillsSectionProps) {
             </h3>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-6 md:gap-8 lg:gap-10">
-            <div className="hidden sm:block">
-              <LanguageMeter
-                percentage={100}
-                label={t.skillsSection.bulgarian}
-                level={t.skillsSection.native}
-              />
-            </div>
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+            <LanguageRow
+              label={t.skillsSection.bulgarian}
+              level={t.skillsSection.native}
+              delayMs={0}
+            />
 
-            <LanguageMeter
-              percentage={90}
+            <LanguageRow
               label={t.skillsSection.english}
               level={t.skillsSection.professional}
+              delayMs={120}
             />
 
-            <LanguageMeter
-              percentage={30}
+            <LanguageRow
               label={t.skillsSection.german}
               level={t.skillsSection.basic}
+              delayMs={240}
             />
 
-            <LanguageMeter
-              percentage={25}
+            <LanguageRow
               label={t.skillsSection.japanese}
               level={
                 <AnimatedLevelText
-                  mainText={t.skillsSection.n5}
-                  flashText={t.skillsSection.n4InProgress}
+                  mainText={t.skillsSection.n4}
+                  flashText={t.skillsSection.n3InProgress}
                 />
               }
+              delayMs={360}
             />
           </div>
 

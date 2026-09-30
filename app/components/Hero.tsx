@@ -110,52 +110,20 @@ export default function HeroSection({
               </h1>
 
               <div className="mt-2 flex min-h-[44px] w-full items-center justify-center text-lg font-medium text-slate-500 dark:text-slate-400 sm:text-2xl md:min-h-[64px] md:text-2xl lg:justify-start">
-                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 whitespace-normal md:max-w-[640px] lg:justify-start lg:whitespace-nowrap">
-                  <span className="inline-block text-center lg:text-left">
-                    <WordCycler
-                      finalLanguage={language}
-                      introActive={introActive}
-                      durationMs={1500}
-                      startDelayMs={260}
-                      words={{
-                        en: translations.en.hero.roleLeft,
-                        bg: translations.bg.hero.roleLeft,
-                        de: translations.de.hero.roleLeft,
-                        ja: translations.ja.hero.roleLeft,
-                      }}
-                    />
-                  </span>
-
-                  <span className="inline-block text-center">
-                    <WordCycler
-                      finalLanguage={language}
-                      introActive={introActive}
-                      durationMs={1200}
-                      startDelayMs={420}
-                      words={{
-                        en: translations.en.hero.roleJoiner,
-                        bg: translations.bg.hero.roleJoiner,
-                        de: translations.de.hero.roleJoiner,
-                        ja: translations.ja.hero.roleJoiner,
-                      }}
-                    />
-                  </span>
-
-                  <span className="inline-block text-center lg:text-left">
-                    <WordCycler
-                      finalLanguage={language}
-                      introActive={introActive}
-                      durationMs={2200}
-                      startDelayMs={140}
-                      words={{
-                        en: translations.en.hero.roleRight,
-                        bg: translations.bg.hero.roleRight,
-                        de: translations.de.hero.roleRight,
-                        ja: translations.ja.hero.roleRight,
-                      }}
-                    />
-                  </span>
-                </div>
+                <span className="inline-block text-center lg:text-left">
+                  <WordCycler
+                    finalLanguage={language}
+                    introActive={introActive}
+                    durationMs={1500}
+                    startDelayMs={260}
+                    words={{
+                      en: translations.en.hero.roleLeft,
+                      bg: translations.bg.hero.roleLeft,
+                      de: translations.de.hero.roleLeft,
+                      ja: translations.ja.hero.roleLeft,
+                    }}
+                  />
+                </span>
               </div>
             </div>
 
