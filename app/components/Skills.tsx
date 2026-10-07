@@ -56,7 +56,7 @@ function AnimatedLevelText({
   }, []);
 
   return (
-    <span className="relative inline-grid min-h-[24px] min-w-[120px] place-items-start">
+    <span className="inline-grid min-h-[24px] min-w-[140px] place-items-center overflow-hidden whitespace-nowrap text-center">
       <span
         className={`col-start-1 row-start-1 transition-opacity duration-[1400ms] ease-in-out ${
           showFlashText ? "opacity-0" : "opacity-100"
@@ -87,12 +87,12 @@ function LanguageRow({ label, level, delayMs = 0 }: LanguageRowProps) {
         isInView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
       }`}
     >
-      <div className="flex flex-col gap-1 text-center lg:text-left">
-        <span className="text-xl font-semibold text-slate-100 sm:text-2xl">
+      <div className="flex flex-col items-center gap-1 text-center">
+        <span className="text-xl font-semibold text-slate-800 dark:text-slate-100 sm:text-2xl">
           {label}
         </span>
 
-        <span className="text-base font-medium text-emerald-400 dark:text-emerald-300 sm:text-lg">
+        <span className="text-base font-semibold text-emerald-500 dark:text-emerald-300 sm:text-lg">
           {level}
         </span>
       </div>
@@ -177,7 +177,7 @@ export default function SkillsSection({ language }: SkillsSectionProps) {
             </h3>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-7 sm:grid-cols-2 xl:grid-cols-4">
             <LanguageRow
               label={t.skillsSection.bulgarian}
               level={t.skillsSection.native}
